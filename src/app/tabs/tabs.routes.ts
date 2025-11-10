@@ -22,6 +22,16 @@ export const routes: Routes = [
           import('../tab3/tab3.page').then((m) => m.Tab3Page),
       },
       {
+        path: 'checkout',
+        loadComponent: () =>
+          import('../checkout/checkout.page').then((m) => m.CheckoutPage),
+      },
+      {
+        path: 'order-confirmation',
+        loadComponent: () =>
+          import('../order-confirmation/order-confirmation.page').then((m) => m.OrderConfirmationPage),
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full',
@@ -33,4 +43,6 @@ export const routes: Routes = [
     redirectTo: '/tabs/tab1',
     pathMatch: 'full',
   },
+  { path: 'checkout', redirectTo: '/tabs/checkout', pathMatch: 'full' },
+  { path: 'order-confirmation', redirectTo: '/tabs/order-confirmation', pathMatch: 'full' },
 ];

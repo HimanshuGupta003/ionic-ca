@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Food Ordering
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,110 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Welcome</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <div class="home">
+    <!-- Logo Section -->
+    <div class="logo-section">
+      <div class="logo-circle">
+        <ion-icon name="restaurant" class="logo-icon"></ion-icon>
+      </div>
+      <h1 class="app-title">Food Ordering</h1>
+      <p class="app-tagline">Delicious meals delivered to your door</p>
+    </div>
+
+    <!-- Hero Image -->
+    <div class="hero-section">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="Delicious Food" class="hero-img" />
+    </div>
+
+    <!-- Quick Stats -->
+    <div class="stats-grid">
+      <div class="stat-item">
+        <ion-icon name="fast-food"></ion-icon>
+        <h3>100+</h3>
+        <p>Dishes</p>
+      </div>
+      <div class="stat-item">
+        <ion-icon name="rocket"></ion-icon>
+        <h3>30 Min</h3>
+        <p>Fast Delivery</p>
+      </div>
+      <div class="stat-item">
+        <ion-icon name="lock-closed"></ion-icon>
+        <h3>Secure</h3>
+        <p>Payment</p>
+      </div>
+    </div>
+
+    <!-- CTA Button -->
+    <ion-button expand="block" size="large" class="cta-button" (click)="goToMenu()">
+      <ion-icon slot="start" name="restaurant"></ion-icon>
+      Browse Menu
+    </ion-button>
+
+    <!-- Popular Categories -->
+    <div class="section">
+      <h2 class="section-title">Popular Categories</h2>
+      <div class="categories-grid">
+        <div class="category-item" (click)="goToMenu()">
+          <div class="category-icon-wrapper pizza">
+            <ion-icon name="pizza"></ion-icon>
+          </div>
+          <span>Pizza</span>
+        </div>
+        <div class="category-item" (click)="goToMenu()">
+          <div class="category-icon-wrapper burger">
+            <ion-icon name="fast-food"></ion-icon>
+          </div>
+          <span>Burgers</span>
+        </div>
+        <div class="category-item" (click)="goToMenu()">
+          <div class="category-icon-wrapper salad">
+            <ion-icon name="leaf"></ion-icon>
+          </div>
+          <span>Salads</span>
+        </div>
+        <div class="category-item" (click)="goToMenu()">
+          <div class="category-icon-wrapper dessert">
+            <ion-icon name="ice-cream"></ion-icon>
+          </div>
+          <span>Desserts</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- How it Works -->
+    <div class="section">
+      <h2 class="section-title">How it works</h2>
+      <div class="steps-container">
+        <div class="step-item">
+          <div class="step-number">1</div>
+          <ion-icon name="search"></ion-icon>
+          <h4>Browse</h4>
+          <p>Explore our menu</p>
+        </div>
+        <div class="step-item">
+          <div class="step-number">2</div>
+          <ion-icon name="cart"></ion-icon>
+          <h4>Add to Cart</h4>
+          <p>Select your items</p>
+        </div>
+        <div class="step-item">
+          <div class="step-number">3</div>
+          <ion-icon name="card"></ion-icon>
+          <h4>Checkout</h4>
+          <p>Complete payment</p>
+        </div>
+        <div class="step-item">
+          <div class="step-number">4</div>
+          <ion-icon name="checkmark-circle"></ion-icon>
+          <h4>Enjoy</h4>
+          <p>Food delivered!</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </ion-content>

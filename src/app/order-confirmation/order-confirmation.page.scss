@@ -1,0 +1,47 @@
+ion-content {
+	padding: 32px 0 0 0;
+	--background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+.confirmation-card {
+	background: rgba(255, 255, 255, 0.98);
+	border-radius: 20px;
+	box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+	padding: 40px 24px;
+	margin: 40px 16px;
+	max-width: 340px;
+	text-align: center;
+	animation: fadeInScale 0.6s ease-out;
+}
+
+.confirmation-card ion-icon {
+	font-size: 80px;
+	color: #667eea;
+	margin-bottom: 16px;
+}
+
+.confirmation-card h1 {
+	color: #764ba2;
+	font-weight: 700;
+	margin-bottom: 8px;
+}
+
+ion-button {
+	font-size: 1.1rem;
+	border-radius: 12px;
+	padding: 16px 0;
+	font-weight: 600;
+	margin-top: 24px;
+	--box-shadow: 0 8px 24px rgba(102, 126, 234, 0.4);
+}
+
+@keyframes fadeInScale {
+	from {
+		opacity: 0;
+		transform: scale(0.8);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+/* styles for order confirmation page */
